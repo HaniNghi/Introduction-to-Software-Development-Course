@@ -5,5 +5,9 @@ function addASnowFlake() {
   document.getElementById("images").appendChild(image);
 }
 
-//INSERT YOUR CODE HERE
+//Call addASnowFlake function 3 times
+addASnowFlake()
+addASnowFlake()
+addASnowFlake()
+
 
