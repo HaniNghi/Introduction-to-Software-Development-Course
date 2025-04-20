@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Inception",
+        "publishing_year": 2010,
+        "description": "A skilled thief is given a chance at redemption if he can successfully perform inception, the planting of an idea into a target's subconscious."
+    },
+    {
+        "name": "The Matrix",
+        "publishing_year": 1999,
+        "description": "A computer hacker learns the true nature of reality and his role in the war against its controllers."
+    },
+    {
+        "name": "Interstellar",
+        "publishing_year": 2014,
+        "description": "A group of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+    },
+    {
+        "name": "The Shawshank Redemption",
+        "publishing_year": 1994,
+        "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+    }
+]
