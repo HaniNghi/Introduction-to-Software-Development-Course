@@ -47,20 +47,13 @@ function showAdults(){
 }
 
 function showYoungestMember(){
-    let youngest = ages[0]
+    let youngestIndex = 0
     for (let i=0; i < ages.length; i++){
-        console.log('first loop i with value', i)
-        for (let x=i; x < ages.length; x++){
-            console.log('second loop with x', x)
-            if(ages[x] < ages[x+1]){
-                youngest = ages[x]
-                console.log("insideloop",youngest)
-                // 'age[x]'. age[x], 'ages[x+1]', ages[x+1])
-            } else {
-                youngest = ages[x+1]
-
-            }
+        if (ages[youngestIndex] > ages[i]) {
+            youngestIndex = i
         }
     }
-    console.log(youngest)
+    console.log(`youngest: ${names[youngestIndex]}-${ages[youngestIndex]}`)
 }
+
+
