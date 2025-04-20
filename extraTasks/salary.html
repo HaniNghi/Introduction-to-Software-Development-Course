@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>XX</title>
+
+    <!-- Lomakekenttien laitto vasemmalta tasan -->
+    <style>
+        label {
+            display: block;
+            width: 6em;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>XX</h3>
+
+    <form>
+        <div>
+            <label>Hours:</label>
+            <input type="text" id="hours" size="30">
+        </div>
+        <div>
+            <label>Wage per hour:</label>
+            <input type="text" id="salaryPerHour" size="30">
+        </div>
+        <input type="button" value="Gross Salary" onclick="showGrossSalary()">
+    </form>
+
+    <!-- Tänne kirjoitetaan vastaus JavaScriptillä -->
+    <div id="answer"></div>
+
+    <script>
+        "use strict";
+        // Funktio, jota painike kutsuu
+        function caculateGrossSalary(hours, salaryPerHour) {
+            let salaryResult = hours * salaryPerHour
+            return salaryResult
+        }
+
+        function print(salaryResult) {
+            document.getElementById("answer").innerHTML = `Gross salary is ${salaryResult}`
+        }
+
+        function showGrossSalary() {
+            const hours = Number(document.getElementById("hours").value)
+            const salaryPerHour = Number(document.getElementById("salaryPerHour").value)
+            const salaryResult = caculateGrossSalary(hours, salaryPerHour)
+
+            print(salaryResult)
+        }
+    </script>
+</body>
+
+</html>

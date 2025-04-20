@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Players and Scores - Recapping JavaScript</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h1>Example</h1>
+    <p>Players and scores: First version with two separate arrays.
+        (Second could be with Player objects)</p>
+    <hr /> <!-- ----------------------------------------------- -->
+
+    <p>
+        <span>Enter the name of the player:</span>
+        <input type="text" id="txtName" />
+        <br />
+
+        <span>Enter her/his score:</span>
+        <input type="text" id="txtScore" />
+        <br />
+
+        <button onclick="addNameAndScoreToArray()">Add player and clear input fields</button>
+        <p id="pOutput0"></p>
+
+    </p>
+    <hr /> <!-- ----------------------------------------------- -->
+
+    <p>
+        <button onclick="listPlayers()">List players</button>
+    </p>
+    <p id="pOutput1"></p>
+
+    <hr /> <!-- ----------------------------------------------- -->
+
+    <p>
+        <span>Enter the name of the player to search:</span>
+        <input type="text" id="txtNameToSearch"/>
+        <button onclick="searchByName()">Search</button>
+    </p>
+    <p id="pOutput2"></p>
+
+    <hr /> <!-- ----------------------------------------------- -->
+
+    <p>
+        <button onclick="findWinner()">Find winner</button>
+    </p>
+    <p id="pOutput3"></p>
+
+    <hr /> <!-- ----------------------------------------------- -->
+
+    <script src="player_code.js"> </script>
+
+</body>
+</html>
